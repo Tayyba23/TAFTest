@@ -1,0 +1,94 @@
+-------------------------------------------------------------------------------------------------
+-- **********************************************************************************************
+-- *                           Copyright 2017, Teradata Ltd                                     *
+-- *                                                                                            *
+-- *                                                                                            *
+-- **********************************************************************************************
+-- **********************************************************************************************
+-- * Script Name      : DVT_Test_TAFDB_IT_CompareAllColumns_SQL_Target.txt                      *
+-- * Description      : This script displays generated Stats/Rownum/Minus queries               *
+-- *                  : Use this script to run on Target database.                            *
+-- *                                                                                            *
+-- * Developed By     : GDC Migration Practice, Teradata                                        *
+-- *                                                                                            *
+-- **********************************************************************************************
+
+
+SELECT
+    'TARGET' AS DB_TYPE,
+    'KR_ADDRESS_YL' AS TABLE_NAME,
+    TEKN_ASIAKK_ID  AS TEKN_ASIAKK_ID,
+    Y_TUNNUS  AS Y_TUNNUS,
+    ADDRESS_TYPE  AS ADDRESS_TYPE,
+    CO_ADDRESS  AS CO_ADDRESS,
+    STREET_ADDRESS  AS STREET_ADDRESS,
+    POST_CODE  AS POST_CODE,
+    POST_OFFICE  AS POST_OFFICE,
+    COUNTRY_CODE  AS COUNTRY_CODE,
+    REGISTRATION_DATE  AS REGISTRATION_DATE,
+    MUUTOSHETKI  AS MUUTOSHETKI,
+    time_stamp  AS time_stamp FROM TAFD.KR_ADDRESS_YL  KR_ADDRESS_YL order by TEKN_ASIAKK_ID,
+    Y_TUNNUS,
+    ADDRESS_TYPE,
+    CO_ADDRESS,
+    STREET_ADDRESS,
+    POST_CODE,
+    POST_OFFICE,
+    COUNTRY_CODE,
+    REGISTRATION_DATE,
+    MUUTOSHETKI,
+    time_stamp
+;
+
+SELECT
+    'TARGET' AS DB_TYPE,
+    'KR_ADDRESS_YL_FR' AS TABLE_NAME,
+    TEKN_ASIAKK_ID  AS TEKN_ASIAKK_ID,
+    Y_TUNNUS  AS Y_TUNNUS,
+    ADDRESS_TYPE  AS ADDRESS_TYPE,
+    CO_ADDRESS  AS CO_ADDRESS,
+    STREET_ADDRESS  AS STREET_ADDRESS,
+    POST_CODE  AS POST_CODE,
+    POST_OFFICE  AS POST_OFFICE,
+    COUNTRY_CODE  AS COUNTRY_CODE,
+    REGISTRATION_DATE  AS REGISTRATION_DATE,
+    MUUTOSHETKI  AS MUUTOSHETKI,
+    time_stamp  AS time_stamp FROM TAFD.KR_ADDRESS_YL_FR  KR_ADDRESS_YL order by TEKN_ASIAKK_ID,
+    Y_TUNNUS,
+    ADDRESS_TYPE,
+    CO_ADDRESS,
+    STREET_ADDRESS,
+    POST_CODE,
+    POST_OFFICE,
+    COUNTRY_CODE,
+    REGISTRATION_DATE,
+    MUUTOSHETKI,
+    time_stamp
+;
+
+SELECT
+    'TARGET' AS DB_TYPE,
+    'KR_ADDRESS_YL_HH' AS TABLE_NAME,
+    TEKN_ASIAKK_ID  AS TEKN_ASIAKK_ID,
+    Y_TUNNUS  AS Y_TUNNUS,
+    ADDRESS_TYPE  AS ADDRESS_TYPE,
+    CO_ADDRESS  AS CO_ADDRESS,
+    STREET_ADDRESS  AS STREET_ADDRESS,
+    POST_CODE  AS POST_CODE,
+    POST_OFFICE  AS POST_OFFICE,
+    COUNTRY_CODE  AS COUNTRY_CODE,
+    REGISTRATION_DATE  AS REGISTRATION_DATE,
+    Start_Date  AS Start_Date,
+    End_Date  AS End_Date FROM TAFD.KR_ADDRESS_YL_HH  KR_ADDRESS_YL order by TEKN_ASIAKK_ID,
+    Y_TUNNUS,
+    ADDRESS_TYPE,
+    CO_ADDRESS,
+    STREET_ADDRESS,
+    POST_CODE,
+    POST_OFFICE,
+    COUNTRY_CODE,
+    REGISTRATION_DATE,
+    Start_Date,
+    End_Date
+;
+

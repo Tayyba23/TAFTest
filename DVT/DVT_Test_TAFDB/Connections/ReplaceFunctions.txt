@@ -1,0 +1,7 @@
+TERADATA_VALUE *#$ TYPE *#$ RDBMS *#$ VALUE *#$ REPLACE
+Json File Directory *#$ Directory *#$ NA *#$ D:\Work@Office\Tools_Demo\JAVA Tools\DVT\DVT_DEMO\TestCases *#$ NO
+LENGTH *#$ FUNCTION *#$ SQLSERVER *#$ LEN *#$ NO
+LENGTH *#$ FUNCTION *#$ DB2 *#$ LENG *#$ NO
+NUMBER *#$ TYPE *#$ SQLSERVER *#$ DECIMAL *#$ NO
+TO_CHAR( *#$ FUNCTION *#$ SQLSERVER *#$ CONVERT(VARCHAR (30), *#$ NO
+'YYYY-MM-DD HH24:MI:SS' *#$ TYPE *#$ SQLSERVER *#$ 20 *#$ NO
